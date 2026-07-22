@@ -167,7 +167,8 @@
     background:var(--card); border:1px solid var(--border); border-radius:14px;
     padding:32px 28px; box-shadow:var(--shadow);
   }
-  .problem-card .chan{font-family:"SF Mono","Roboto Mono",monospace;font-size:.78rem;letter-spacing:.1em;color:var(--periwinkle);font-weight:700;text-transform:uppercase;}
+  .problem-card .chan{display:flex;align-items:center;gap:7px;font-family:"SF Mono","Roboto Mono",monospace;font-size:.78rem;letter-spacing:.1em;color:var(--periwinkle);font-weight:700;text-transform:uppercase;}
+  .chan-ico{width:16px;height:16px;flex:none;}
   .problem-card .headline{font-size:1.1rem;font-weight:700;margin:10px 0 18px;}
   .problem-card .num{font-family:"SF Mono","Roboto Mono",monospace;font-size:2.3rem;font-weight:700;font-variant-numeric:tabular-nums;color:var(--text);}
   .problem-card .num-label{font-size:.82rem;color:var(--text-muted);margin:2px 0 14px;}
@@ -381,21 +382,21 @@
     </div>
     <div class="problem-grid">
       <div class="problem-card">
-        <div class="chan">Mail</div>
+        <div class="chan"><svg class="chan-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 6-10 7L2 6"/></svg>Mail</div>
         <div class="headline">開封されない</div>
         <div class="num">3〜10<span style="font-size:1.1rem;">%</span></div>
         <div class="num-label">メルマガ開封率</div>
         <p>プロモーションタブ・迷惑メールフォルダに埋没し、そもそも目に触れない。なりすまし増加で正規メールまで疑われ、信頼インフラとして劣化しています。</p>
       </div>
       <div class="problem-card">
-        <div class="chan">LINE</div>
+        <div class="chan"><svg class="chan-ico" viewBox="0 0 24 24" fill="#06C755"><path d="M12 3C6.48 3 2 6.94 2 11.5c0 2.6 1.44 4.94 3.7 6.5-.15 1.06-.68 2.4-1.7 3.5 1.7-.2 3.3-.9 4.5-1.8 1.1.3 2.3.5 3.5.5 5.52 0 10-3.94 10-8.5S17.52 3 12 3z"/></svg>LINE</div>
         <div class="headline">二重のハードル</div>
         <div class="num">約30<span style="font-size:1.1rem;">%</span></div>
         <div class="num-label">友だち・ID連携率</div>
         <p>9,700万人にリーチ可能な一方、友だち追加・ID連携という能動的なオプトインが必須で、獲得数が伸びにくいのが実情です。</p>
       </div>
       <div class="problem-card">
-        <div class="chan">SMS</div>
+        <div class="chan"><svg class="chan-ico" viewBox="0 0 24 24" fill="none" stroke="#9CA0BE" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>SMS</div>
         <div class="headline">信頼が毀損</div>
         <div class="num">245<span style="font-size:1.1rem;">万件</span></div>
         <div class="num-label">フィッシング詐欺報告件数</div>
