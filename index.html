@@ -324,9 +324,10 @@
     font-size:.82rem;letter-spacing:.06em;padding:9px 20px;border-radius:999px;
   }
   .slot-mock{
-    max-width:420px;margin:34px auto 0;background:var(--card);border-radius:16px;padding:22px;
-    box-shadow:var(--shadow); text-align:left;
+    max-width:640px;margin:34px auto 0;background:var(--card);border-radius:16px;padding:8px;
+    box-shadow:var(--shadow); text-align:left; overflow:hidden;
   }
+  .slot-mock iframe{display:block;width:100%;border-radius:10px;}
   .slot-mock .cal-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;}
   .slot-mock .cal-head span{font-size:.82rem;color:var(--text-muted);font-weight:600;}
   .slot-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;}
@@ -349,17 +350,13 @@
 </head>
 <body>
 
+
 <!-- ============ HERO ============ -->
 <section class="hero">
   <div class="hero-grid">
     <div>
       <h1>開封率・CVRが圧倒的に高くなる<br>次世代メッセージ規格<br><em>「RCS」</em>活用ご案内</h1>
       <p class="hero-sub">SMSの到達力 × メール／LINEの表現力。獲得経路を問わず、全顧客への打ち手を変える新しいCRMチャネルの活用法を、実績データとともにご説明します。</p>
-      <div class="hero-meta">
-        <span><strong>主催</strong>　スタークス株式会社</span>
-        <span><strong>形式</strong>　オンライン個別相談（30分）</span>
-        <span><strong>費用</strong>　無料</span>
-      </div>
       <a href="#booking" class="cta-btn">事例シェア会に予約する <span class="arrow">→</span></a>
       <p class="cta-note">RCSアカウント開設も無料。申請しても配信開始の義務は発生しません。</p>
     </div>
@@ -618,23 +615,6 @@
   </div>
 </section>
 
-<!-- ============ スタークスから配信する4つのメリット ============ -->
-<section style="background:var(--card);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Why STARX</div>
-      <h2 class="section-title">スタークスから配信する4つのメリット</h2>
-      <p class="section-lede">EC・通販の知見 × 成果報酬 × 制作PDCA × 高CVR導線 ―― RCS活用を「成果」まで伴走します。現状の都度手動配信を、All View（分析）× All Pilot（配信）でシナリオ配信から分析連携までワンストップ提供する「仕組み」へ変えていきます。</p>
-    </div>
-    <div class="icon-rows">
-      <div class="icon-row"><div class="icon-circle">01</div><div><h4>通販・EC支援の豊富な知見</h4><p>数多くのEC・通販事業者を支援してきた実績をもとに、業種・商材ごとの勝ち筋を踏まえた配信コンテンツ作成を支援します。</p></div></div>
-      <div class="icon-row"><div class="icon-circle">02</div><div><h4>成果報酬で配信可能</h4><p>導入コストを抑えた成果報酬プランをご用意。事業者にとって低リスクで、まずはトライしやすい設計です。</p></div></div>
-      <div class="icon-row"><div class="icon-circle">03</div><div><h4>制作・PDCAも報酬内で対応</h4><p>成果報酬契約なら、専門スタッフがコンテンツ制作とPDCAを担当。その費用も成果報酬内で対応します。</p></div></div>
-      <div class="icon-row"><div class="icon-circle">04</div><div><h4>最短2クリック注文導線</h4><p>RCS→チャットボット経由で最短2クリックで注文完了。離脱を最小化し、高CVRを狙えます。</p></div></div>
-    </div>
-  </div>
-</section>
-
 <!-- ============ 登壇者・会社概要 ============ -->
 <section>
   <div class="wrap">
@@ -651,20 +631,6 @@
         <p class="bio">スタークスに創業当初から参画。リピート通販カートシステム導入実績は500社以上。スタートアップから年商数億規模まで、様々な規模のD2Cやリピート通販事業のカートシステム導入を支援。LINEとカートシステムの連携を活かしたLINE施策の紹介を得意とし、様々なEC業界のカンファレンスに登壇。</p>
       </div>
     </div>
-    <div class="company-grid">
-      <div class="company-table">
-        <div><span>会社名</span><span>スタークス株式会社</span></div>
-        <div><span>所在地</span><span>東京都品川区西五反田1丁目30−2　ウィン五反田ビル4階</span></div>
-        <div><span>代表</span><span>上ノ山 慎哉</span></div>
-        <div><span>設立</span><span>2012年7月</span></div>
-        <div><span>資本金</span><span>1,100万円</span></div>
-        <div><span>事業内容</span><span>コマース特化ビジネスDXソリューションサービス</span></div>
-      </div>
-      <div class="achieve-stack">
-        <div class="achieve-tile"><div class="num">1,300<span style="font-size:1.1rem;">社以上</span></div><div class="lbl">ECブランド累計支援社数</div></div>
-        <div class="achieve-tile"><div class="num">350<span style="font-size:1.1rem;">社以上</span></div><div class="lbl">LINE・SMS累計支援社数</div></div>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -672,28 +638,16 @@
 <section class="final-cta" id="booking">
   <div class="narrow">
     <div class="eyebrow">Next Step</div>
-    <h2>まずは30分の無料個別相談へ</h2>
+    <h2>事例シェア会を予約する</h2>
     <p class="sub">貴社の顧客データ・獲得チャネル構成に合わせて、活用プランと効果試算をご提示します。</p>
 
-    <!-- EDIT: 実施期間に合わせて日付を差し替えてください -->
-    <div class="limited-badge">8/1（土）〜8/31（月）限定企画</div>
+    <div class="limited-badge">8/1（土）〜8/14（金）限定企画</div>
 
     <div class="slot-mock">
-      <div class="cal-head"><span>担当者の空き日程から選択</span><span>30分 / オンライン</span></div>
-      <div class="slot-grid">
-        <div class="slot open">8/4 10:00</div>
-        <div class="slot open">8/4 15:00</div>
-        <div class="slot">8/5 満席</div>
-        <div class="slot open">8/6 11:00</div>
-        <div class="slot open">8/7 13:30</div>
-        <div class="slot open">8/7 16:00</div>
-        <div class="slot">8/8 満席</div>
-        <div class="slot open">8/12 10:30</div>
-      </div>
+      <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3if-o09Ze2Nhqe8jND8G9A_emzcIOBletZKT9D6YmCKdj-NCDIBQNAfb-VyAr7TXJU7QS4AIF8?gv=true" style="border:0" width="100%" height="620" frameborder="0"></iframe>
     </div>
 
-    <!-- EDIT: 予約フォーム／カレンダーツールのURLに差し替えてください -->
-    <a href="#" class="cta-btn">空き日程を確認して予約する <span class="arrow">→</span></a>
+    <a href="https://calendar.app.google/3Wv7vtdszyPeEpWU6" target="_blank" rel="noopener" class="cta-btn">空き日程を確認して予約する <span class="arrow">→</span></a>
     <p class="cta-note">RCSアカウント開設は無料。申請しても配信開始の義務は発生しません。</p>
 
     <div class="steps">
@@ -705,6 +659,7 @@
 </section>
 
 <footer>© スタークス株式会社</footer>
+
 
 </body>
 </html>
